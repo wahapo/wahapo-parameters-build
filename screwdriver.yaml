@@ -1,0 +1,10 @@
+shared:
+  image: node:12
+  steps:
+    - step1: 'echo "Region: $(meta get parameters.name.value)"'
+
+jobs:
+    main:
+        requires: [~pr, ~commit]
+        parameters:
+          name: "wahapo"
