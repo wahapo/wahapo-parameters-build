@@ -2,9 +2,10 @@ shared:
   image: node:12
   steps:
     - step1: 'echo "Region: $(meta get parameters.name.value)"'
+    
+parameters:
+  name: "wahapo"
 
 jobs:
-    main:
-        requires: [~pr, ~commit]
-        parameters:
-          name: "wahapo"
+  main:
+    requires: [~pr, ~commit]
