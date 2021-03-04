@@ -5,6 +5,15 @@ shared:
     
 parameters:
   name: "wahapo"
+  param1:
+    value: "value1"
+    description: "description of nameB"
+  param2: ["value2-1", "value2-2"]
+  paramA: "valueA"
+  paramB: "valueB"
+  paramC: "valueC"
+  paramD: "valueD"
+  paramE: "valueE"
 
 jobs:
   main:
